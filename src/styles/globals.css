@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'leaflet/dist/leaflet.css';
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply antialiased;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  @apply outline-none ring-2 ring-primary ring-offset-2;
+}
+
+.skeleton {
+  @apply animate-pulse bg-slate-200 rounded-md;
+}
